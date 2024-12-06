@@ -1,0 +1,199 @@
+:root {
+    --main-background-color: #1E202B;
+    --second-background-color: #323544;
+    --third-background-color: #009AD8;
+    --fourth-background-color:#2D303D;
+    --fifth-color:#262936;
+}
+ body{
+   
+    background-color: var(--main-background-color);
+ }
+ input{
+    background-color: var(--main-background-color);
+    border: none;
+    color:#fff;
+    
+ }
+ button{
+    background-color: var(--third-background-color);
+    color: white;
+ }
+.text-header {
+    font-size: 10px;
+}
+
+.nav-link.active {
+    color: var(--third-background-color) !important;
+    border: 3px solid;
+    border-radius: 25px;
+    padding-inline: 15px !important;
+    padding-block: 0px !important;
+}
+
+.nav-link:hover {
+    color: var(--third-background-color) !important;
+    border: 3px solid;
+    border-radius: 25px;
+}
+
+.nav-link {
+    color: white;
+    border: 3px solid transparent;
+    border-radius: 25px;
+    padding-inline: 15px !important;
+    padding-block: 0px !important;
+}
+
+header {
+    background-color: var(--main-background-color) !important;
+}
+
+.navbar {
+    background-color: var(--main-background-color) !important;
+}
+.color-background{
+    background-color: var(--main-background-color);
+}
+.button-flow{
+    right: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.navbar-toggler-icon{
+    background-image: url(../imges/bars-solid\ \(1\).svg);
+}
+.navbar-toggler:focus{
+box-shadow: none !important;
+}
+.button-flow{
+    padding-inline: 2.5rem;
+    padding-block:1rem;
+
+}
+.card-top{
+    background-color: var(--fourth-background-color);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.card-content{
+    background-color: var(--second-background-color);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.tempreture{
+    font-size: 5rem;
+}
+.card{
+    width: 90%;
+    border-radius: 10px;
+    
+}
+/* .img-background{
+
+    width: 100%;
+    overflow: hidden; 
+    
+}
+
+.img-background img{
+ width: fit-content !important;
+ height: 550px !important;
+   
+} */
+.img-background{
+background-image: url(banner.png);
+
+height: 500px;
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+
+}
+.text-gray{
+    color: #bfc1c8 !important;
+}
+.state img{
+    width: 100px !important;
+}
+
+
+
+.card-mid{
+    background-color: var(--fifth-color);
+}
+.card-mid-title{
+    
+    background-color: var(--main-background-color);
+}
+.section1{
+top:-12rem
+}
+.card-content{
+    height: 500px;
+    max-height: 500px;
+}
+
+.input-footer{
+    top: 30%;
+    width: 70%; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+footer{
+    background-color: var(--fourth-background-color);
+}
+ 
+.icon{
+    width: 20px;
+    height: 20px;
+    background-color: var(--main-background-color);
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 20px;
+    margin-inline: 10px;
+    color: var(--third-background-color);
+    transition: color 400ms ,background-color 400ms;
+    i{
+        font-size: larger;
+        
+    }
+ 
+    
+}
+.icon:hover{
+    color: #1E202B;
+    background-color: var(--third-background-color);
+}
+
+@media screen and (max-width:992px) {
+    .nav-link.active{
+        border: 0px !important;
+    }    
+   
+    .nav-link{
+        text-align: center;
+        border: none !important;
+    }
+    .card-mid-title{
+        background-color: var(--fourth-background-color);
+    }
+    .card-content{
+        height:400px;
+    }
+
+}
+@media screen and (max-width:1200px) {
+    .tempreture{
+        font-size: 5rem !important;
+    }
+}
+@media screen and (min-width:992px) {
+    .card{
+        width: 33.333%;
+    }
+  
+}
+@media screen and (max-width:500px){
+
+}

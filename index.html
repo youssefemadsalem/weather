@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+      <header>
+        <div class="container">
+          <nav class="navbar navbar-expand-lg pb-4 p-md-0">
+            <a class="navbar-brand d-flex gap-2" href="#">
+              <div class="w-50">
+                <img src="logo.png" class="w-100" alt="">
+              </div>
+              <div>
+                <h5 class="m-0 title-header text-white">Weather</h5>
+                <h6 class="text-header text-white">tagline goes here</h6>
+              </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav ms-auto d-flex gap-3 fw-semibold">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link" href="#">News</a>
+                <a class="nav-link" href="#">Live Cameras</a>
+                <a class="nav-link" href="#">Photos</a>
+                <a class="nav-link" href="#">Contact</a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <section class="position-relative ">
+        <div class="img-background" style="height: 432px;">
+          <!-- <img src="./imges/banner.png" class="w-100" alt="" /> -->
+        </div>
+        <div class="container-fluid container-lg p-0 position-relative w-100 section1">
+          <div class="overrider  top-50 w-100">
+            <div class="input position-relative">
+              <input type="text" class="w-100 rounded-pill px-4 py-4 inputLocation" placeholder="Find your Location...">
+              <button class="position-absolute rounded-pill button-flow">
+                Find
+              </button>
+            </div>
+            <div class="row">
+              <div class="card m-auto mt-5 border-0 bg-transparent d-flex col-lg-3 col-12">
+                <div class="card-top d-flex justify-content-between text-gray p-3">
+                  <h4 class="day fw-medium">Thursday</h4>
+                  <h4 class="date fw-medium">05 December</h4>
+                </div>
+                <div class="p-3 card-content d-flex flex-column align-content-between text-gray gap-4">
+                  <h3 class="city">Liverpool</h3>
+                  <h2 class="tempreture fw-bolder text-white">
+                   <span class="tempreture-degree">10.1</span> <sup>o</sup>C
+                    <span class="state">
+                      <img src="//cdn.weatherapi.com/weather/64x64/day/302.png" alt="">
+                    </span>
+                  </h2>
+  
+                  <h5 class="text-primary fw-normal state-Weather">Moderate rain</h5>
+                  <div class="text-secondary fs-5">
+                    <span>
+                      <img src="icon-compass.png" alt="imge"> 20%
+                    </span>
+                    <span>
+                      <img src="icon-umberella.png" alt="imge"> 18Km/h
+                    </span>
+                    <span>
+                      <img src="icon-wind.png" alt="imge">East
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="card m-auto mt-5 border-0 bg-transparent d-flex col-lg-4 col-12">
+                <div class="card-top d-flex justify-content-center text-gray p-3 card-mid-title">
+                  <h4 class="day day-card2 fw-medium">Friday</h4>
+                </div>
+                <div class="p-5 card-content d-flex flex-column align-items-center text-gray gap-5 card-mid">
+                  <h2 class="fs-1 fw-medium text-white d-flex flex-column p-1">
+                    <span class="state d-flex justify-content-center">
+                      <img class="icon-state-card2" src="//cdn.weatherapi.com/weather/64x64/day/302.png" alt="">
+                    </span>
+                    <span class="text-center"><span class="temp-card2">7.6</span><sup>o</sup>C</span>
+                  </h2>
+  
+                  <h5 class="text-primary fw-normal state-card2">Moderate rain</h5>
+                </div>
+              </div>
+              <div class="card m-auto mt-5 border-0 bg-transparent d-flex col-lg-4 col-12">
+                <div class="card-top d-flex justify-content-center text-gray p-3">
+                  <h4 class="day fw-medium day-card3">Saturday</h4>
+                </div>
+                <div class="p-5 card-content d-flex flex-column align-items-center text-gray gap-5">
+                  <h2 class="fs-1 fw-medium text-white d-flex flex-column p-1">
+                    <span class="state d-flex justify-content-center">
+                      <img src="//cdn.weatherapi.com/weather/64x64/day/308.png" alt="" class="icon-card3">
+                    </span>
+                    <span class="text-center"><span class="temp-card3">7.7</span><sup>o</sup>C</span>
+                  </h2>
+  
+                  <h5 class="text-primary fw-normal state-card3">Heavy rain</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="py-5 px-2">
+        <div class="input position-relative mb-4 ">
+          <input type="text" class="w-100 rounded-pill px-4 py-4" placeholder="Find ypur Location...">
+          <button class="position-absolute rounded-pill button-flow">
+            Subscribe
+          </button>
+        </div>
+        <div class=" m-2">
+          <a class=" icon"><i class="fa-brands fa-facebook"></i></a>
+          <a class=" icon"><i class="fa-brands fa-twitter"></i></a>
+          <a class=" icon"><i class="fa-brands fa-pinterest"></i></a>
+          <a class=" icon"><i class="fa-brands fa-google-plus-g"></i></a>
+        </div>
+      </footer>
+    <script src="index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
